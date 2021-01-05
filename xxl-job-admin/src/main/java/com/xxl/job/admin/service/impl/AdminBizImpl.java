@@ -115,7 +115,7 @@ public class AdminBizImpl implements AdminBiz {
         log.setHandleTime(new Date());
         log.setHandleCode(handleCallbackParam.getExecuteResult().getCode());
         log.setHandleMsg(handleMsg.toString());
-        xxlJobLogDao.updateHandleInfo(log);
+            xxlJobLogDao.updateHandleInfo(log);
 
         return ReturnT.SUCCESS;
     }
